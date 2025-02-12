@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="number" id="day-input" placeholder="DD" min="1" max="31">
+                        <small>Day</small>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" id="month-input" placeholder="MM" min="1" max="12">
+                        <small>Month</small>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" id="year-input" placeholder="YYYY" min="1900">
+                        <small>Year</small>
+                    </div>
+                </div>
+            </div>
+            <button id="calculate-btn">Calculate Age</button>
+        </div>
+        <div class="result">
+            <div class="result-item">
+                <span id="years">-</span>
+                <p>Years</p>
+            </div>
+            <div class="result-item">
+                <span id="months">-</span>
+                <p>Months</p>
+            </div>
+            <div class="result-item">
+                <span id="days">-</span>
+                <p>Days</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
